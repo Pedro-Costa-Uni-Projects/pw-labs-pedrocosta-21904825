@@ -5,18 +5,24 @@
     <title>Página Report LAB1</title>
     <style>
         h1 {text-align: center;}
+        * {font-family: Arial;}
     </style>
 </head>
 <body>
-    <h1> Laboratório 1 </h1>
-    <h2> 1. Conhecer a Internet</h2>
-    <h3> Endereços IP:</h3>
-    <p>Ao aceder ao site <a href="https://whatismyipaddress.com/ip-lookup"> What Is My IP</a> obtive o IP e a minha localização, verifiquei támbem que fazendo o mesmo no telémovel, utilizando dados moveis obtive um IP completamente diferente.</p>
-    <p> Como se vê nas seguintes imagens:</p>
+    <h1>Laboratório 1</h1>
+    <h2>1. Conhecer a Internet</h2>
+    <h3>Endereços IP:</h3>
+    <p>Ao aceder ao site <a href="https://whatismyipaddress.com/ip-lookup"> What Is My IP</a> obtive o IP e a minha localização, verifiquei támbem que fazendo o mesmo no telémovel, utilizando dados moveis obtive um IP completamente diferente.<br>
+        Como se vê nas seguintes imagens:</p>
     <img src="img/ipPC.png">
     <img src="img/ipTelemovel.png">
-    <h3> Percurso:</h3>
-    <p> FALTA PERCURSO TEXTO AQUI</p>
+    <h3>Percurso:</h3>
+    <p> Utilizando a linha de comandos e o comando tracert vi a rota que o IP da minha app faz, identificando os router pelos quais os pacotes passam desde o meu PC até ao endereço de destino.<br>
+        Verifiquei também que a partir do 8 deu sempre "Request timed out." Como se pode verificar:</p>
+    <img src="img/linhaComandos.png">
+    <p> Pegando no IP da app "34.240.116.75" e o site <a href="https://geotraceroute.com/"> Geo Traceroute</a>, metendo Portugal como destino de origem, obtive que o meu servidor Heroku está localizando em Frankfurt, Alemanha.</p>
+    <img src="img/geotraceroute.png">
+
 
 </body>
 </html>
