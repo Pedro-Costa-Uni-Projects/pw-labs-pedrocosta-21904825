@@ -24,7 +24,7 @@
     <p> Utilizando a linha de comandos e o comando tracert vi a rota que o IP da minha app faz, identificando os router pelos quais os pacotes passam desde o meu PC até ao endereço de destino.<br>
         Verifiquei também que a partir do 8 deu sempre "Request timed out." Como se pode verificar:</p>
     <img src="img/linhaComandos.png">
-    <p> Pegando no IP da app "34.240.116.75" e o site <a href="https://geotraceroute.com/"> Geo Traceroute</a>, metendo Portugal como destino de origem, obtive que o meu servidor Heroku está localizado em Frankfurt, Alemanha.</p>
+    <p> Pegando no IP da app "34.240.116.75" e o site <a href="https://geotraceroute.com/"> Geo Traceroute</a>, escolhendo Portugal como destino de origem, obtive que o meu servidor Heroku está localizado em Frankfurt, Alemanha.</p>
     <img src="img/geotraceroute.png">
     <h2>2. Acesso via HTTP à minha página Web</h2>
     <h3>HTTP:</h3>
@@ -33,7 +33,12 @@
     <h3>Inspect:</h3>
     <p>Ao fazer "Inspect" da página vesse que foram descarregados 2 ficheiros, o tempo que cada um demorou a carregar, o tipo e o tamanho de cada um.</p>
     <img src="img/inspect.png">
-    <p>Selecionando cada um e verificando a tab preview, headers e timing</p>
+    <p>Selecionando cada um e verificando a tab preview, headers e timing.</p>
+    <ul>
+        <li>Tab headers vemos por exemplo o tipo de metodo para request, o codigo de estado, a data do pedido entre outos.</li>
+        <li>Tab preview temos basicamente o produto final em si, seja o site ou a imagem neste caso.</li>
+        <li>Tab timing mostra quando tempo demorou cada ficheiro a carregar.</li>
+    </ul>
     <img src="img/inspectPWLAB1.png">
     <img src="img/inspectWordCloud.png">
 
