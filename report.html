@@ -17,7 +17,52 @@
 </head>
 <body>
     <h1>Laboratório 1</h1>
-    <h2>1. Conhecer a Internet</h2>
+    <h2>1. Alojamento de página Web na cloud</h2>
+    <h3>Criação de uma página Web:</h3>
+    <ul>
+        <li>Criar uma pasta lab1. Dentro dessa pasta, criar o ficheiro index.html com o código fonte HTML.</li>
+        <li>Criar na pasta lab1, a pasta img, e guardar dentro desta a imagem wordcloud.png.</li>
+        <li>Abrir o ficheiro index.html com um Browser.</li>
+    </ul>
+    <h3>Linguagem HTML:</h3>
+    <ul>
+        <li>Composta por "tags", pslavras entre parênteses "&lt" - "&gt".</li>
+        <li>Todos os documentos HTML começam por: &lt!DOCTYPE html&gt.</li>
+        <li>O documento em si começa com &lthtml&gt e acabam com &lt/html&gt.</li>
+        <li>A parte visivel do documento está entre &ltbody&gt e &lt/body&gt</li>
+        <li>Marcadores:</li>
+        <ul>
+            <li>h1 -> define um titulo, h2 para subtítulo,...</li>
+            <li>p -> parágrafo.</li>
+            <li>u -> lista não enumerada.</li>
+            <li>li -> define uma linha.</li>
+            <li>img -> define uma imagem.</li>
+        </ul>
+        <li>Atributos:</li>
+        <ul>
+            <li>href -> define o URL da hiperligação.</li>
+            <li>src -> define o nome do ficheiro com a imagem.</li>
+        </ul>
+    </ul>
+    <h3>Criação de repositório GitHub:</h3>
+    <ul>
+        <li>Criar um repositorio no <a href="https://github.com/"> GitHub</a>.</li>
+        <li>Fazer push do conteúdo da pasta lab1.</li>
+    </ul>
+    <h3>Alojamento no Heroku:</h3>
+    <ul>
+        <li>Criar conta no <a href="https://heroku.com/"> Heroku</a>.</li>
+        <li>Sincronizar com o GitHub.</li>
+        <li>Adicionar dois ficheiros ao diretorio root:</li>
+        <ul>
+            <li>index.php -> com o conteúdo: &lt?php include_once("index.html") ?&gt</li>
+            <li>composer.json -> com o conteúdo: {}</li>
+        </ul>
+        <li>Criar uma aplicação, atribuindo-lhe um nome.</li>
+        <li>Na tab Deploy da aplicação, e na secção Manual Deploy clicar em Deploy Branch.</li>
+        <li>Clicar em Open App e verificar se consegue-se ver a página HTML</li>
+    </ul>
+    <h2>2. Conhecer a Internet</h2>
     <h3>Endereços IP:</h3>
     <p>Ao aceder ao site <a href="https://whatismyipaddress.com/ip-lookup"> What Is My IP</a> obtive o IP e a minha localização, verifiquei támbem que fazendo o mesmo no telémovel, utilizando dados moveis obtive um IP completamente diferente.<br>
         Como se vê nas seguintes imagens:</p>
@@ -29,7 +74,7 @@
     <img src="img/linhaComandos.png">
     <p> Pegando no IP da app "34.240.116.75" e o site <a href="https://geotraceroute.com/"> Geo Traceroute</a>, escolhendo Portugal como destino de origem, obtive que o meu servidor Heroku está localizado em Frankfurt, Alemanha.</p>
     <img src="img/geotraceroute.png">
-    <h2>2. Acesso via HTTP à minha página Web</h2>
+    <h2>3. Acesso via HTTP à minha página Web</h2>
     <h3>HTTP:</h3>
     <p>Neste passo carregei ctrl + u que fez com que visse o código fonte. Que é exatamente igual ao código escrito no index.html</p>
     <img src="img/sourcecode.png">
