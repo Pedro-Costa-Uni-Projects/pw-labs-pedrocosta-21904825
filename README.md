@@ -2,8 +2,8 @@
 
 ## Heroku App
 
-[pw-labs-pedrocosta-21904825.herokuapp.com](https://pw-labs-pedrocosta-21904825.herokuapp.com/)
+pw-labs-pedrocosta-21904825.herokuapp.com
 
-## Authors
+## Author
 
-Pedro Costa - pedrocostaalves@live.com.pt
+Pedro Costa (21904825) - pedrocostaalves@live.com.pt
