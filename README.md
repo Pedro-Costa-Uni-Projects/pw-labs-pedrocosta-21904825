@@ -2,7 +2,7 @@
 
 ## Heroku App
 
-pw-labs-pedrocosta-21904825.herokuapp.com
+[pw-labs-pedrocosta-21904825.herokuapp.com](https://pw-labs-pedrocosta-21904825.herokuapp.com/)
 
 ## Author
 
