@@ -6,5 +6,5 @@
 
 ## Author
 
-Pedro Costa (21904825) - (University) a21904825@alunos.ulht.pt
+Pedro Costa (21904825) - (University) a21904825@alunos.ulht.pt<br>
                        - (Personal) pedrocostaalves@live.com.pt
