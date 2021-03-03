@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="utf-8">
+        <style>
+            h1 {text-align: center;}
+            * {
+                font-family: Arial;
+                box-sizing: border-box;
+            }
+            img {
+                margin: auto;
+                display: block;
+            }
+        </style>
+        <title>Montijo</title>
+        <meta name="author" content="Pedro Costa">
+        <meta name="keywords" content="Montijo, Cidade, Rio Tejo">
+        <meta name="description" content="Website sobre Montijo">
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
+        <body style="background-color: lightgray;">      
+    </head>
+    <body>
+        <h1>Montijo</h1>
+        <img src="images/montijo.jpg" alt="Praça da Republica, Montijo"><br>
+        <div style="text-align: center">
+            <a href="quizz.html">Quizz</a>
+            |
+            <a href="comentarios.html">Comentários</a>
+            |
+            <a href="../index.html">Home</a>
+            |
+            <a href="index.html"><b>Introdução</b></a>
+            |
+            <a href="local.html">Localização</a>
+            |
+            <a href="multimedia.html">Multimédia</a>
+            |
+            <a href="info.html">Informações</a>
+        </div>
+        <h3>Quizz:</h3>
+        <form
+        oninput="x.value=parseInt(ano.value)"
+        method="POST" action="mailto:a21904825@alunos.ulht.pt">
+
+            <fieldset>
+                <legend align="center">Informações</legend>
+                <p>Nome: <input type="text" id="fname" name="fname" autofocus required autocomplete="on"></p>
+                <p>Apelido: <input type="text" id="lname" name="lname" required autocomplete="on"></p>
+                <p>Email: <input type="email" id="email" name="email" required autocomplete="on"></p>
+                <p>Telemóvel: <input type="tel" id="phone" name="phone" placeholder="Ex: 9XXXXXXXX" maxlength="9" autocomplete="on"></p>
+            </fieldset>
+            <fieldset>
+                <legend align="center">Quizz</legend>
+                <p>Qual o nome anterior da cidade? <input type="text" id="nomeCidade" name="nomeCidade" size="15"></p>
+                <p>Em que ano passou o Montijo à categoria de cidade? 
+                    <input type="radio" id="ano1" name="anoCidade" value="1985">
+                    <label for="ano1">1985</label>
+                    <input type="radio" id="ano2" name="anoCidade" value="1990">
+                    <label for="ano2">1990</label>
+                </p>
+                <p>Quais destas freguesias pertencem ao concelho do Montijo?
+                    <br>
+                    <input type="checkbox" id="freg1" name="freg1" value="Moita">
+                    <label for="freg1">Moita</label>
+                    <input type="checkbox" id="freg2" name="freg2" value="Canha">
+                    <label for="freg2">Canha</label>
+                    <input type="checkbox" id="freg3" name="freg3" value="Alcochete">
+                    <label for="freg3">Alcochete</label>
+                    <input type="checkbox" id="freg4" name="freg4" value="Sarilhos Pequenos">
+                    <label for="freg4">Sarilhos Pequenos</label>
+                    <input type="checkbox" id="freg5" name="freg5" value="Sarilhos Grandes">
+                    <label for="freg5">Sarilhos Grandes</label>
+                </p>
+                <p>
+                    <label for="dataNome">Em que data a cidade obteve o nome Montijo?</label>
+                    <input type="date" id="dataNome" name="dataNome" min="1920-01-01" max="1940-12-31">
+                </p>
+                <p>
+                    <label for="cor">Qual a cor do coreto da praça da república?</label>
+                    <input type="color" id="cor" name="cor" value="#FFFF00">
+                </p>
+                <p>
+                    <label for="freguesias">Quantas freguesias têm o concelho do Montijo?</label>
+                    <input type="number" id="freguesias" name="freguesias" min="1" max="10" step="2">
+                </p>
+                <p>
+                    <label for="ano">Qual densidade populacional?</label>
+                    <input type="range" id="ano" name="ano" min="75" max="250" value="100">
+                    <output name="x">100</output>
+                </p>
+            </fieldset>
+            <br>
+            <input type="submit" value="Enviar" style="height:25px; width:125px;">
+            
+        </form>
+        
+    </body>
+</html>
