@@ -38,6 +38,7 @@
             |
             <a href="info.html">Informações</a>
         </div>
+        <hr>
         <h3>Quizz:</h3>
         <form
         oninput="x.value=parseInt(densidade.value)"
@@ -86,9 +87,9 @@
                     <input type="number" id="freguesias" name="freguesias" min="1" max="10" step="2">
                 </p>
                 <p>
-                    <label for="ano">Qual densidade populacional?</label>
-                    <input type="range" id="densidade" name="densidade" min="75" max="250" value="100">
-                    <output name="x">100</output>
+                    <label for="ano">Se visitou a cidade o quanto gostou de 0 a 100?</label>
+                    <input type="range" id="densidade" name="densidade" min="0" max="100" value="50">
+                    <output name="x">50</output>
                 </p>
             </fieldset>
             <br>

@@ -38,6 +38,7 @@
             |
             <a href="info.html">Informações</a>
         </div>
+        <hr>
         <h3>Comentários:</h3>
         <form
             oninput="outR.value=parseInt(rig.value)"
@@ -69,24 +70,18 @@
                     <input type="number" id="origi" name="origi" min="1" max="5">
                 </p>
                 <p>&#x2139; Escolha as opções que acha que este Website teve em conta:</p>
-                <u>
-                    <li>
-                        <label for="prof">Profundidade</label>
-                        <input type="checkbox" id="prof" name="prof" value="Profundidade">
-                    </li>
-                    <li>
-                        <label for="amp">Amplitude</label>
-                        <input type="checkbox" id="amp" name="amp" value="Amplitude">
-                    </li>
-                    <li>
-                        <label for="log">Lógica</label>
-                        <input type="checkbox" id="log" name="log" value="Lógica">
-                    </li>
-                    <li>
-                        <label for="sign">Significância</label>
-                        <input type="checkbox" id="sign" name="sign" value="Significância">
-                    </li>
-                </u>
+                    <input type="checkbox" id="prof" name="prof" value="Profundidade">
+                    <label for="prof">Profundidade - (complexo com míltiplas inter-relações)</label>
+                    <br>
+                    <input type="checkbox" id="amp" name="amp" value="Amplitude">
+                    <label for="amp">Amplitude - (abrange diferentes aspectos/pontos de vista)</label>
+                    <br>
+                    <input type="checkbox" id="log" name="log" value="Lógica">
+                    <label for="log">Lógica - (não há contradições, provém de evidências)</label>
+                    <br>
+                    <input type="checkbox" id="sign" name="sign" value="Significância">
+                    <label for="sign">Significância - (focado no importante, não trivial)</label>
+                <br>
                 <br>
                 <textarea name="mensagem" rows="7" cols="50">Escreva aqui sugestões de melhoria.</textarea>
                 <input type="hidden" id="idLAB" name="idLAB" value="3">
