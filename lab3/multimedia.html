@@ -87,8 +87,54 @@
         </pre>
     </center>
     <hr>
-    <h2>FALTA AQUI SVG CRIATIVO PONTO 4.3</h2>
+    <!--DESENHO CRIATIVO -->
+    <svg width="300" height="225" style="margin:auto; display:block" id="svgAnimado">
+        <rect x="75" y="150" width="150" height="40" fill="white">
+            <animateTransform attributeName="transform" attributeType="XML" type="scale" values="1;1.2;1;1.2;1" dur="10s" repeatCount="indefinite" />
+        </rect>
+        <rect x="75" y="150" width="5" height="40" fill="yellow">
+            <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-30" to="0" dur="10s" repeatCount="indefinite" />
+        </rect>
+        <rect x="112" y="150" width="5" height="40" fill="yellow">
+            <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-30" to="0" dur="10s" repeatCount="indefinite" />
+        </rect>
+        <rect x="150" y="150" width="5" height="40" fill="yellow">
+            <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-30" to="0" dur="10s" repeatCount="indefinite" />
+        </rect>
+        <rect x="186" y="150" width="5" height="40" fill="yellow">
+            <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-30" to="0" dur="10s" repeatCount="indefinite" />
+        </rect>
+        <rect x="220" y="150" width="5" height="40" fill="yellow">
+            <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-30" to="0" dur="10s" repeatCount="indefinite" />
+        </rect>
+        <rect x="75" y="90" width="5" height="60" fill="grey">
+            <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="30" to="0" dur="10s" repeatCount="indefinite" />
+        </rect>
+        <rect x="220" y="90" width="5" height="60" fill="grey">
+            <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="30" to="0" dur="10s" repeatCount="indefinite" />
+        </rect>
+        <rect x="150" y="90" width="5" height="60" fill="grey">
+            <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="30" to="0" dur="10s" repeatCount="indefinite" />
+        </rect>
+        <rect x="60" y="90" width="180" height="5" fill="red">
+            <animateTransform attributeName="transform" attributeType="XML" type="scale" values="1;1.2;1;1.2;1" dur="10s" repeatCount="indefinite" />
+        </rect>
+        <path style="fill:lightgray; stroke:red; stroke-width: 5px;" d="M 75 90 A 93.83 93.83 0 0 0 150 40">
+            <animateTransform attributeName="transform" attributeType="XML" type="scale" values="1;1.2;1;1.2;1" dur="10s" repeatCount="indefinite" />
+        </path>
+        <path style="fill:lightgray; stroke:red; stroke-width: 5px;" d="M 220 90 A 93.83 93.83 1 0 1 150 40">
+            <animateTransform attributeName="transform" attributeType="XML" type="scale" values="1;1.2;1;1.2;1" dur="10s" repeatCount="indefinite" />
+        </path>
+        <circle cx="150" cy="20" r="20" fill="red">
+            <animate attributeName="cy" values="20;5;20" dur="10s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="" cy="" r="10" fill="green">
+            <animateMotion dur="10s" repeatCount="indefinite" path="M75,190 L225,190"/>       
+        </circle>
+    </svg>
+    <label for="svgAnimado" style="display: block; text-align: center;">Coreto do Montijo animado feito com SVG</label>
     <hr>
+    <!--IMAGEM SVG PARQUE-->
     <figure>
         <img src="images/svgParque.svg">
         <figcaption>Imagem SVG feita por mim do parque do montijo</figcaption>
@@ -115,7 +161,7 @@
             </text>
         </a>
         <a href="../index.html" >
-            <text x="112" y="75" style="font-size: 30px";>
+            <text x="112" y="75" style="font-size: 35px";>
                 Home
                 <animateTransform attributeName="transform" attributeType="XML" type="scale" begin="1s" values="1;1.2;1;1.2;1" dur="10s" fill="freeze" />
             </text>
