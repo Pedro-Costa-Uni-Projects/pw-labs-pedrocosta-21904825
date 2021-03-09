@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="utf-8">
+        <style>
+            h1 {text-align: center;}
+            * {font-family: Arial;}
+            img {
+                margin: auto;
+                display: block;
+            }
+            svg {
+                margin: auto;
+                display: block;
+            }
+        </style>
+        <title>Montijo</title>
+        <meta name="author" content="Pedro Costa">
+        <meta name="keywords" content="Montijo, Cidade, Rio Tejo">
+        <meta name="description" content="Website sobre Montijo">
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
+        <body style="background-color: lightgray;">      
+    </head>
+    <body>
+        <h1>Montijo</h1>
+        <img src="images/montijo.jpg" alt="Praça da Republica, Montijo"><br>
+        <!--MENU GERAL-->
+        <div style="text-align: center">
+            <a href="html5-css.html">HTML5 e CSS</a>
+            |
+            <a href="quizz.html">Quizz</a>
+            |
+            <a href="comentarios.html">Comentários</a>
+            |
+            <a href="../index.html">Home</a>
+            |
+            <a href="index.html"><b>Introdução</b></a>
+            |
+            <a href="local.html">Localização</a>
+            |
+            <a href="multimedia.html">Multimédia</a>
+            |
+            <a href="info.html">Informações</a>
+        </div>
+        <hr>
+        <h3>Introdução:</h3>
+        <p>Montijo é um concelho com 348,62 km² de área e 51222 habitantes (2011), subdividido em 5 freguesias. É um dos poucos municípios de Portugal territorialmente descontínuo.
+            <a href="http://www.terrasdeportugal.pt/montijo" target="_blank">[1]</a>
+        </p>
+        <p>&#x24C2;&#x27A1;&#x1F3E0;&#x1F4C5;&#x31;&#x39;&#x33;&#x30;&#x1F51C;&#x1F3E2;&#x1F4C6;&#x31;&#x39;&#x38;&#x35;</p>
+        <hr>
+        <p><u><span style="color: red;"><b>O Montijo</span></b></span> <span style="color: orange;">ficou conhecido</span> <span style="color: yellow;"><b>como Aldeia Galega</b></span> <span style="color: green;">até 6 de julho de 1930,</span></u>
+           <i><span style="color: blue;"><b> apesar de ser uma vila pequena</b></span> <span style="color:purple">e não mais que uma vila</span> <span style="color: red;"><b>só foi elevada</b></span> <span style="color: orange;">à categoria de cidade</span> <span style="color: yellow"><b> 14 de agosto de 1985.</b></span></i></p>
+        <hr>
+        <p>O Montijo ficou conhecido como Aldeia Galega até 6 de julho de 1930, apesar de ser uma vila pequena e não mais que uma vila só foi elevada à categoria de cidade em 14 de agosto de 1985.
+            <a href="https://www.mun-montijo.pt/conhecer/o-concelho" target="_blank">[2]</a>
+        </p>
+        <ul>
+            <li><a href="quizz.html">Quizz:</a> quizz sobre a cidade e opinião.</li>
+            <li><a href="comentarios.html">Comentários:</a> pequeno formulario onde dá a sua opinião sobre o Website.</li>
+            <li><a href="local.html">Localização:</a> mapa do Google Maps e SVG com fotos de cada freguesia.</li>
+            <li><a href="multimedia.html">Multimédia:</a> galeria de fotos, video usando drone da cidade, e poema.</li>
+            <li><a href="info.html">Informações:</a> dados demograficos, geograficos e Website.</li>
+        </ul>
+        <!--SVG INCORPORADO COM WORLDCLOUD IMAGE-->
+        <svg width="300" height="225">
+            <image href="images/wordcloud.jpg" width="100%" height="100%"></image>
+            <!-- opacity a zero para não aparecer a figura-->
+            <a href="index.html" >
+                <polygon opacity="0.0" points="0,0 0,225 300,225 300,0" />
+            </a>
+            <a href="info.html">
+                <polygon opacity="0.0" points="115,180 115,200 187,200 187,180" />
+            </a>
+            <a href="local.html">
+                <polygon opacity="0.0" points="60,47 60,90 245,90 245,47" />
+            </a>
+            <a href="multimedia.html">
+                <polygon opacity="0.0" points="76,205 86,216 128,161 124,152" />
+            </a>
+        </svg>
+        <hr>
+        <!--MENU GERAL SVG-->
+        <svg width="300" height="225" style="margin:auto; display:block">
+            <path id="my_path1" d="M 43,27 C 80,60 100,40 120,20" fill="transparent" />
+            <path id="my_path2" d="M 5,190 C 200,200 300,100 120,20" fill="transparent" />
+            <a href="quizz.html" >
+                <text x="43" y="27" style="font-size: 25px;">
+                    <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="30" to="0" begin="1s" dur="10s" fill="freeze" />
+                    <textPath xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#my_path1">
+                        Quizz
+                    </textPath>
+                </text>
+            </a>
+            <a href="comentarios.html" >
+                <text x="35" y="190" style="font-size: 22px";>
+                    <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="30" to="0" begin="1s" dur="10s" fill="freeze" />
+                    <textPath xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#my_path2">
+                        Comentários
+                    </textPath>
+                </text>
+            </a>
+            <a href="../index.html" >
+                <text x="112" y="75" style="font-size: 35px";>
+                    Home
+                    <animateTransform attributeName="transform" attributeType="XML" type="scale" begin="1s" values="1;1.2;1;1.2;1" dur="10s" fill="freeze" />
+                </text>
+            </a>
+            <a href="index.html" >
+                <text x="200" y="40" style="font-size: 20px";>
+                    Introdução
+                    <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-30" to="0" begin="1s" dur="10s" fill="freeze" />
+                </text>
+            </a>
+            <a href="local.html">
+                <text x="153" y="140" style="font-size: 23px";>
+                    Localização
+                    <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-30" to="0" begin="1s" dur="10s" fill="freeze" />
+                </text>
+            </a>
+            <a href="multimedia.html">
+                <text x="13" y="120" style="font-size: 25px";>
+                    Multimédia
+                    <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="30" to="0" begin="1s" dur="10s" fill="freeze" />
+                </text>
+            </a>
+            <a href="info.html">
+                <text x="176" y="206" style="font-size: 21px";>
+                    Informações
+                    <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-30" to="0" begin="1s" dur="10s" fill="freeze" />
+                </text>
+            </a>
+            
+        </svg>
+        <hr>
+    </body>
+</html>
