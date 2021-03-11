@@ -8,6 +8,10 @@
                 font-family: Arial;
                 box-sizing: border-box;
             }
+            td { text-align: center;}
+            table, th, td {
+                border: 1px solid black;
+            } 
             img {
                 margin: auto;
                 display: block;
@@ -18,6 +22,7 @@
         <meta name="keywords" content="Montijo, Cidade, Rio Tejo">
         <meta name="description" content="Website sobre Montijo">
         <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <body style="background-color: lightgray;">      
     </head>
     <body>
@@ -55,7 +60,196 @@
                 <h3>HTML5 e CSS:</h3>
             </section>
             <section>
-                <!--COMEÇAR AQUI-->
+                <h4>HTML5</h4>
+                <p>HTML5 é uma linguagem de marcação usada para estruturar e apresentar conteúdo na World Wide Web.<br>
+                    É a quinta e última versão principal do HTML recomendada pelo World Wide Web Consortium (W3C).</p>
+            </section>
+            <!--TABELA ELEMENTOS HTML5-->
+            <section>
+                <table style="margin: auto;" cellpadding="10%" cellspacing="3">
+                    <thead>
+                        <tr>
+                            <th>Elemento</th>
+                            <th>Usado?</th>
+                            <th>Localização do Uso</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Hr</td>
+                            <td><span class="material-icons md-24">verified_user</span></td>
+                            <td>Em todas as páginas</td>
+                        </tr>
+                        <tr>
+                            <td>Hx</td>
+                            <td><span class="material-icons md-24">verified_user</span></td>
+                            <td>Em todas as páginas</td>
+                        </tr>
+                        <tr>
+                            <td>Div</td>
+                            <td><span class="material-icons md-24">warning</span></td>
+                            <td>Estava a ser usado no lab3 no menu onde passou a nav</td>
+                        </tr>
+                        <tr>
+                            <td>P</td>
+                            <td><span class="material-icons md-24">verified_user</span></td>
+                            <td>Em todas as páginas</td>
+                        </tr>
+                        <tr>
+                            <td>Svg</td>
+                            <td><span class="material-icons md-24">verified_user</span></td>
+                            <td>Em todas as páginas no menu embaixo</td>
+                        </tr>
+                        <tr>
+                            <td>Header/Nav/Main/Section/Footer</td>
+                            <td><span class="material-icons md-24">verified_user</span></td>
+                            <td>Em todas as páginas</td>
+                        </tr>
+                        <tr>
+                            <td>Details</td>
+                            <td><span class="material-icons md-24">verified_user</span></td>
+                            <td>Em todas as páginas na foto inicial</td>
+                        </tr>
+                        <tr>
+                            <td>Style</td>
+                            <td><span class="material-icons md-24">verified_user</span></td>
+                            <td>Em todas as páginas</td>
+                        </tr>
+                        <tr>
+                            <td>Meter</td>
+                            <td><span class="material-icons md-24">warning</span></td>
+                            <td>Não houve ocasião de usar</td>
+                        </tr>
+                        <tr>
+                            <td>Progress</td>
+                            <td><span class="material-icons md-24">warning</span></td>
+                            <td>Não houve ocasião de usar</td>
+                        </tr>
+                        <tr>
+                            <td>Abbr</td>
+                            <td><span class="material-icons md-24">warning</span></td>
+                            <td>Não houve ocasião de usar</td>
+                        </tr>
+                        <tr>
+                            <td>Address</td>
+                            <td><span class="material-icons md-24">warning</span></td>
+                            <td>Não houve ocasião de usar</td>
+                        </tr>
+                        <tr>
+                            <td>Table</td>
+                            <td><span class="material-icons md-24">verified_user</span></td>
+                            <td>Usado nesta página e na página de Informações</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <!--SELETORES CSS-->
+            <section>
+                <h4>CSS</h4>
+                <p>CSS significa Cascading Style Sheets.<br>
+                    Tem como função descrever como os elementos HTML devem ser exibidos na página web.</p>
+            </section>
+            <!--TABELA SELETORES CSS-->
+            <section>
+                <table style="margin: auto;" cellpadding="10%" cellspacing="3">
+                    <thead>
+                        <tr>
+                            <th>Seletor</th>
+                            <th>Usado?</th>
+                            <th>Explicação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Universal</td>
+                            <td><span class="material-icons md-24">verified_user</span></td>
+                            <td>Aplica o estilo a todos os elementos da página</td>
+                        </tr>
+                        <tr>
+                            <td>Tipo</td>
+                            <td><span class="material-icons md-24">verified_user</span></td>
+                            <td>Usa o nome do marcador a estilizar, a regra será aplicada<br>a todos os elementos que possuam esse marcador</td>
+                        </tr>
+                        <tr>
+                            <td>Classe</td>
+                            <td><span class="material-icons md-24">warning</span></td>
+                            <td>Associa um nome a um estilo, o nome é antecedido de "."
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Id</td>
+                            <td><span class="material-icons md-24">warning</span></td>
+                            <td>Permite identificar univocamente um elemento do HTML,<br>o identificador é antecedido de #
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Atributo</td>
+                            <td><span class="material-icons md-24">warning</span></td>
+                            <td>Seletores que se aplicam a atributos de elementos,<br>pode ser apenas referido o atributo, e.g., [target]
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Pseudo-classe</td>
+                            <td><span class="material-icons md-24">warning</span></td>
+                            <td>Identificam elementos em determinado estado, na estrutura do documento</td>
+                        </tr>
+                        <tr>
+                            <td>Pseudo-elemento</td>
+                            <td><span class="material-icons md-24">warning</span></td>
+                            <td>Seletor para regras que se aplicam a partes de elementos</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <br>
+            <!--TABELA COMBINADORES DE SELETORES CSS-->
+            <section>
+                <table style="margin: auto;" cellpadding="10%" cellspacing="3">
+                    <thead>
+                        <tr>
+                            <th>Combinadores</th>
+                            <th>Usado?</th>
+                            <th>Explicação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Descendentes</td>
+                            <td><span class="material-icons md-24">warning</span></td>
+                            <td>São separados por espaço:<br>
+                                Ex: div p –todos os p que estão “dentro” de um div
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Filhos</td>
+                            <td><span class="material-icons md-24">warning</span></td>
+                            <td>Através do uso de ">":<br>
+                                Ex: div > p –todos os p que estão “logo dentro” de div
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Adjacentes</td>
+                            <td><span class="material-icons md-24">warning</span></td>
+                            <td>Através do uso de "~":<br>
+                                Ex: div ~ p –todos os p que estão colocados depois de um div
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Imedatamente Adjacentes</td>
+                            <td><span class="material-icons md-24">warning</span></td>
+                            <td>Através do uso de "+":<br>
+                                Ex: div + p –todos os p que estão colocados “imediatamente” depois de um div
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Agrupação</td>
+                            <td><span class="material-icons md-24">warning</span></td>
+                            <td>Agrupar os seletores,separando-os por virgulas:<br>
+                                Ex: div,p{ color: red; } -os div e p ficacarão com fonte vermelha
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </section>
         <hr>
         </main>
