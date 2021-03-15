@@ -78,13 +78,13 @@ h4 + p::first-letter {
 
 .relative {
     position: relative;
-    right: 100px;
+    right: 7%;
 }
 
 .absolute {
     position: absolute;
-    top: 80px;
-    right: 340px;
+    top: 30%;
+    right: 24%;
 }
 
 .fixed {
