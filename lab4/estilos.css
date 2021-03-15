@@ -89,12 +89,14 @@ h4 + p::first-letter {
 
 .fixed {
     position: fixed;
-    bottom: 0;
+    bottom: 2%;
     right: 0;
 }
 
 .sticky {
     position: -webkit-sticky;
     position: sticky;
-    top: 0;
+    top: 5%;
+    /*ADICIONEI ESTE HEIGH PARA NÃO APARECER UM ESPAÇO EM BRANCO*/
+    height: 0px;
 }
