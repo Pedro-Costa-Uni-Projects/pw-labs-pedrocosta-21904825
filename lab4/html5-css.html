@@ -3,19 +3,10 @@
     <head>
         <meta charset="utf-8">
         <style>
-            h1 {text-align: center;}
-            * {
-                font-family: Arial;
-                box-sizing: border-box;
-            }
             td { text-align: center;}
             table, th, td {
                 border: 1px solid black;
             } 
-            img {
-                margin: auto;
-                display: block;
-            }
         </style>
         <title>Montijo</title>
         <meta name="author" content="Pedro Costa">
@@ -23,35 +14,52 @@
         <meta name="description" content="Website sobre Montijo">
         <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        <body style="background-color: lightgray;">      
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="estilos.css">     
     </head>
     <body>
         <header>
             <h1>Montijo</h1>
             <figure>
-                <img src="images/montijo.jpg" alt="Praça da Republica, Montijo">
+                <img src="images/montijo.jpg" alt="Praça da Republica, Montijo" class="centerImg mainF" clas>
                 <details style="text-align: center;">Foto do Coreto do Montijo, localizado na Praça da Republica</details>
             </figure>
         </header>
         <!--MENU GERAL-->
-        <nav style="text-align: center">
-            <a href="html5-css.html" style="font-weight: bold;">
+        <nav style="text-align: center;">
+            <a href="html5-css.html">
+                <span class="material-icons md-24">settings</span>
                 HTML5 e CSS
             </a>
             |
-            <a href="quizz.html">Quizz</a>
+            <a href="quizz.html"><span class="material-icons md-24">analytics</span>
+                Quizz</a>
             |
-            <a href="comentarios.html">Comentários</a>
+            <a href="comentarios.html"><span class="material-icons md-24">feedback</span>
+                Comentários
+            </a>
             |
-            <a href="../index.html">Home</a>
+            <a href="../index.html"><span class="material-icons md-24">home</span>
+                Home
+            </a>
             |
-            <a href="index.html">Introdução</a>
+            <a href="index.html"><span class="material-icons md-24">star</span>
+                Introdução
+            </a>
             |
-            <a href="local.html">Localização</a>
+            <a href="local.html"><span class="material-icons md-24">fmd_good</span>
+                Localização
+            </a>
             |
-            <a href="multimedia.html">Multimédia</a>
+            <a href="multimedia.html"><span class="material-icons md-24">image</span>
+                Multimédia
+            </a>
             |
-            <a href="info.html">Informações</a>
+            <a href="info.html">
+                <span class="material-icons md-24">info</span>
+                Informações
+            </a>
         </nav>
         <hr>
         <main>
@@ -64,6 +72,7 @@
                 <p>HTML5 é uma linguagem de marcação usada para estruturar e apresentar conteúdo na World Wide Web.<br>
                     É a quinta e última versão principal do HTML recomendada pelo World Wide Web Consortium (W3C).</p>
             </section>
+            
             <!--TABELA ELEMENTOS HTML5-->
             <section>
                 <table style="margin: auto;" cellpadding="10%" cellspacing="3">
@@ -172,33 +181,36 @@
                         </tr>
                         <tr>
                             <td>Classe</td>
-                            <td><span class="material-icons md-24">warning</span></td>
+                            <td><span class="material-icons md-24">verified_user</span></td>
                             <td>Associa um nome a um estilo, o nome é antecedido de "."
                             </td>
                         </tr>
                         <tr>
                             <td>Id</td>
-                            <td><span class="material-icons md-24">warning</span></td>
+                            <td><span class="material-icons md-24">verified_user</span></td>
                             <td>Permite identificar univocamente um elemento do HTML,<br>o identificador é antecedido de #
                             </td>
                         </tr>
                         <tr>
                             <td>Atributo</td>
-                            <td><span class="material-icons md-24">warning</span></td>
+                            <td><span class="material-icons md-24">verified_user</span></td>
                             <td>Seletores que se aplicam a atributos de elementos,<br>pode ser apenas referido o atributo, e.g., [target]
                             </td>
                         </tr>
                         <tr>
                             <td>Pseudo-classe</td>
-                            <td><span class="material-icons md-24">warning</span></td>
+                            <td><span class="material-icons md-24">verified_user</span></td>
                             <td>Identificam elementos em determinado estado, na estrutura do documento</td>
                         </tr>
                         <tr>
                             <td>Pseudo-elemento</td>
-                            <td><span class="material-icons md-24">warning</span></td>
+                            <td><span class="material-icons md-24">verified_user</span></td>
                             <td>Seletor para regras que se aplicam a partes de elementos</td>
                         </tr>
                     </tbody>
+                    <tfoot>
+                        <th colspan="3">Usados no estilos.css</th>
+                    </tfoot>
                 </table>
             </section>
             <br>
@@ -215,14 +227,14 @@
                     <tbody>
                         <tr>
                             <td>Descendentes</td>
-                            <td><span class="material-icons md-24">warning</span></td>
+                            <td><span class="material-icons md-24">verified_user</span></td>
                             <td>São separados por espaço:<br>
                                 Ex: div p –todos os p que estão “dentro” de um div
                             </td>
                         </tr>
                         <tr>
                             <td>Filhos</td>
-                            <td><span class="material-icons md-24">warning</span></td>
+                            <td><span class="material-icons md-24">verified_user</span></td>
                             <td>Através do uso de ">":<br>
                                 Ex: div > p –todos os p que estão “logo dentro” de div
                             </td>
@@ -236,7 +248,7 @@
                         </tr>
                         <tr>
                             <td>Imedatamente Adjacentes</td>
-                            <td><span class="material-icons md-24">warning</span></td>
+                            <td><span class="material-icons md-24">verified_user</span></td>
                             <td>Através do uso de "+":<br>
                                 Ex: div + p –todos os p que estão colocados “imediatamente” depois de um div
                             </td>
@@ -249,6 +261,9 @@
                             </td>
                         </tr>
                     </tbody>
+                    <tfoot>
+                        <th colspan="3">Usados no estilos.css</th>
+                    </tfoot>
                 </table>
             </section>
         <hr>

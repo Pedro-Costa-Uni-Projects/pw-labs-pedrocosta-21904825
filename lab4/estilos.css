@@ -1,0 +1,100 @@
+* {font-family: 'Merriweather Sans', sans-serif;}
+
+h1 {text-align: center;}
+
+body {
+    background-color: lightgray;
+}
+
+.centerImg {
+    margin: auto;
+    display: block;
+}
+
+#svgMiddle{
+    margin: auto;
+    display: block;
+}
+
+/*VER OUTRA FORMA DE FAZER ISTO*/
+nav > a:link {
+    color: black;
+}
+
+nav > a:visited {
+    color: green;
+}
+
+nav > a:hover {
+    color: yellow;
+}
+
+nav > a:active {
+    color: red;
+}
+
+body table {
+    background-color: grey;
+}
+  
+tr:nth-child(odd) {
+    background-color:lightseagreen;
+}
+
+tr:nth-child(even) {
+    background-color: lightsteelblue;
+  }
+
+h3 + p::first-letter {
+    font-size: 200%;
+}
+h4 + p::first-letter {
+    font-size: 150%;
+}
+
+[class$="mainF"] {
+    border: 10px solid lightseagreen;
+}
+
+[class|="smallF"] {
+    border: 5px solid skyblue;
+}
+
+[class*="bigF"] {
+    border: 5px solid skyblue;
+}
+
+[class="svgAnime"] {
+    border: 5px solid grey;
+}
+
+[class~="svgFotoLocal"] {
+    border: 5px solid grey;
+}
+
+[class^="iFrameLocal"] {
+    border: 5px solid grey;
+}
+
+.relative {
+    position: relative;
+    right: 100px;
+}
+
+.absolute {
+    position: absolute;
+    top: 80px;
+    right: 340px;
+}
+
+.fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}

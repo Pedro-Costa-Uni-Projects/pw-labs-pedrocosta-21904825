@@ -3,49 +3,66 @@
     <head>
         <meta charset="utf-8">
         <style>
-            h1 {text-align: center;}
-            * {font-family: Arial;}
-            body {
-                background-color: lightgray;
-            }
-            img {
-                margin: auto;
-                display: block;
-            }
         </style>
         <title>Montijo</title>
         <meta name="author" content="Pedro Costa">
         <meta name="keywords" content="Montijo, Cidade, Rio Tejo">
         <meta name="description" content="Website sobre Montijo">
-        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>    
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="estilos.css"> 
     </head>
+    <!--STICKY AND FIXED IMAGE-->
+    <figure class="sticky">
+        <img src="images/moinho-vento.jpg" style="border: 5px solid steelblue;">
+    </figure>
+    <figure class="fixed">
+        <img src="images/cafe.jpg" style="border: 5px solid steelblue">
+    </figure>
     <body>
         <header>
             <h1>Montijo</h1>
             <figure>
-                <img src="images/montijo.jpg" alt="Praça da Republica, Montijo">
+                <img src="images/montijo.jpg" alt="Praça da Republica, Montijo" class="centerImg mainF" clas>
                 <details style="text-align: center;">Foto do Coreto do Montijo, localizado na Praça da Republica</details>
             </figure>
         </header>
         <!--MENU GERAL-->
-        <nav style="text-align: center">
-            <a href="html5-css.html">HTML5 e CSS</a>
+        <nav style="text-align: center;">
+            <a href="html5-css.html">
+                <span class="material-icons md-24">settings</span>
+                HTML5 e CSS
+            </a>
             |
-            <a href="quizz.html">Quizz</a>
+            <a href="quizz.html"><span class="material-icons md-24">analytics</span>
+                Quizz</a>
             |
-            <a href="comentarios.html">Comentários</a>
+            <a href="comentarios.html"><span class="material-icons md-24">feedback</span>
+                Comentários
+            </a>
             |
-            <a href="../index.html">Home</a>
+            <a href="../index.html"><span class="material-icons md-24">home</span>
+                Home
+            </a>
             |
-            <a href="index.html">Introdução</a>
+            <a href="index.html"><span class="material-icons md-24">star</span>
+                Introdução
+            </a>
             |
-            <a href="local.html">Localização</a>
+            <a href="local.html"><span class="material-icons md-24">fmd_good</span>
+                Localização
+            </a>
             |
-            <a href="multimedia.html" style="font-weight: bold;">
+            <a href="multimedia.html"><span class="material-icons md-24">image</span>
                 Multimédia
             </a>
             |
-            <a href="info.html">Informações</a>
+            <a href="info.html">
+                <span class="material-icons md-24">info</span>
+                Informações
+            </a>
         </nav>
         <hr>
         <main>
@@ -57,26 +74,33 @@
             <section>
                 <figure style="text-align: center;">
                     <a href="images/montijo1_grande.jpg" target="foto">
-                        <img src="images/montijo1_pequeno.jpg" alt="Frente Ribeirinha Montijo" style="display:initial">
+                        <img src="images/montijo1_pequeno.jpg" alt="Frente Ribeirinha Montijo" class="smallF-1" style="display:initial">
                     </a>
                     <a href="images/montijo2_grande.jpg" target="foto">
-                        <img src="images/montijo2_pequeno.jpg" alt="Parque Municipal do Montijo" style="display:initial">
+                        <img src="images/montijo2_pequeno.jpg" alt="Parque Municipal do Montijo" class="smallF-2" style="display:initial">
                     </a>
                     <figcaption>Da esquerda para a direita, Frente Ribeirinha do Montijo, Parque Municipal do Montijo</figcaption>
                 </figure>
                 <br>
-                <iframe src ="images/montijo1_grande.jpg" width="800" height="588" name="foto" style="margin: auto;display: block;"></iframe>
+                <iframe src ="images/montijo1_grande.jpg" width="800" height="588" name="foto" class="centerImg bigF"></iframe>
             </section>
             <hr>
+            <!--REALTIVE AND ABSOLUTE-->
+            <section>
+            <figure class="relative" style="text-align: center;">
+                <img src="images/barcos1.jpg" style="border: 5px solid gray;">
+                <img src="images/barcos2.jpg" class="absolute" style="border: 5px solid gray;">
+            </figure>
+            </section>
+            <br><br><br><br> <!---->
             <!--VIDEO YOUTUBE-->
             <section>
                 <iframe width="560" height="315" style="border:0;display:block;margin:auto;" src="https://www.youtube.com/embed/dxh6QL3Eg5c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </section>
             <hr>
             <!--POEMA-->
-            <section>
-                
-<pre style="text-align: center;">
+            <section>            
+<pre style="text-align: center">
 <span style = "font-size: 18px; font-weight: bold;">
 Dia da Cidade,
 José Joaquim Caria</span>
@@ -105,12 +129,11 @@ Nessa manhã de Verão,
 A minha Vila
 Amanheceu… Cidade.</span>
 </pre>
-
             </section>
             <hr>
             <!--DESENHO CRIATIVO -->
             <section>
-                <svg width="300" height="225" style="margin:auto; display:block" id="svgAnimado">
+                <svg width="300" height="225" style="margin:auto; display:block" class="svgAnime" id="svgAnimado">
                     <rect x="75" y="150" width="150" height="40" fill="white">
                         <animateTransform attributeName="transform" attributeType="XML" type="scale" values="1;1.2;1;1.2;1" dur="10s" repeatCount="indefinite" />
                     </rect>
@@ -160,15 +183,15 @@ Amanheceu… Cidade.</span>
             <!--IMAGEM SVG PARQUE-->
             <section>
                 <figure>
-                    <img src="images/svgParque.svg">
+                    <img src="images/svgParque.svg" class="centerImg">
                     <figcaption style="text-align: center;">Imagem SVG feita por mim do parque do montijo</figcaption>
                 </figure>
             </section>
             <hr>
             <!--MENU GERAL SVG-->
             <section>
-                <svg width="300" height="225" style="margin:auto; display:block">
-                    <path id="my_path1" d="M 43,27 C 80,60 100,40 120,20" fill="transparent" />
+                <svg width="300" height="225" id="svgMiddle">
+                    <path id="my_path1" d="M 43,27 C 80,60 15,40 120,20" fill="transparent" />
                     <path id="my_path2" d="M 5,190 C 200,200 300,100 120,20" fill="transparent" />
                     <a href="quizz.html" >
                         <text x="43" y="27" style="font-size: 25px;">
@@ -217,7 +240,7 @@ Amanheceu… Cidade.</span>
                         </text>
                     </a>
                 </svg>
-            </section>
+            </section>  
             <hr>
         </main>
         <footer>
