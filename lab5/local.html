@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="utf-8">
+        <style>
+        </style>
+        <title>Montijo</title>
+        <meta name="author" content="Pedro Costa">
+        <meta name="keywords" content="Montijo, Cidade, Rio Tejo">
+        <meta name="description" content="Website sobre Montijo">
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="estilos.css"> 
+    </head>
+    <body>
+        <header>
+            <h1>Montijo</h1>
+            <figure>
+                <img src="images/montijo.jpg" alt="Praça da Republica, Montijo" class="centerImg mainF" clas>
+                <details style="text-align: center;">Foto do Coreto do Montijo, localizado na Praça da Republica</details>
+            </figure>
+        </header>
+        <!--MENU GERAL-->
+        <nav style="text-align: center;">
+            <a href="html5-css.html">
+                <span class="material-icons md-24">settings</span>
+                HTML5 e CSS
+            </a>
+            |
+            <a href="quizz.html"><span class="material-icons md-24">analytics</span>
+                Quizz</a>
+            |
+            <a href="comentarios.html"><span class="material-icons md-24">feedback</span>
+                Comentários
+            </a>
+            |
+            <a href="../index.html"><span class="material-icons md-24">home</span>
+                Home
+            </a>
+            |
+            <a href="index.html"><span class="material-icons md-24">star</span>
+                Introdução
+            </a>
+            |
+            <a href="local.html"><span class="material-icons md-24">fmd_good</span>
+                Localização
+            </a>
+            |
+            <a href="multimedia.html"><span class="material-icons md-24">image</span>
+                Multimédia
+            </a>
+            |
+            <a href="info.html">
+                <span class="material-icons md-24">info</span>
+                Informações
+            </a>
+        </nav>
+        <hr>
+        <main>
+            <!--TITULO. INTRO E GOOGLE MAPS-->
+            <section>
+                <h3>Localização:</h3>
+                <p>Montijo é uma cidade do distrito de Setúbal em Portugal e faz parte da área metropolitana de Lisboa.</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d49809.50699885458!2d-8.975562090839043!3d38.71564648770294!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-PT!2spt!4v1614179733256!5m2!1spt-PT!2spt" width="400" height="250" style="border:5px solid yellow;display:block;margin:auto;" allowfullscreen="" loading="lazy"></iframe>    
+            </section>
+            <hr>
+            <!--MAPA INTERATIVO SVG COM FOTOS-->
+            <section>
+                <svg width="799" height="416" class="svgFotoLocal">
+                    <image href="images/Montijo.svg" width="100%" height="100%"></image>
+                    <a href="images/canha.png" target="fotosvg">
+                        <circle opacity="0.2" cx="541" cy="215" r="10"/>
+                    </a>
+                    <a href="images/atalaia.png" target="fotosvg">
+                        <circle opacity="0.2" cx="200" cy="330" r="10"/>
+                    </a>
+                    <a href="images/ribeirinha_do_montijo.png" target="fotosvg">
+                        <circle opacity="0.2" cx="110" cy="290" r="10"/>
+                    </a>
+                    <a href="images/sarilhos.png" target="fotosvg">
+                        <circle opacity="0.2" cx="150" cy="335" r="10"/>
+                    </a>
+                    <a href="images/pegoes.png" target="fotosvg">
+                        <circle opacity="0.2" cx="550" cy="330" r="10"/>
+                    </a>
+                </svg>
+                <iframe src ="images/ribeirinha_do_montijo.png" width="350" height="250" style="float: right;" class="iFrameLocal" name="fotosvg"></iframe>
+            </section>
+            <hr>
+            <!--MENU GERAL SVG-->
+            <section>
+                <svg width="300" height="225" id="svgMiddle">
+                    <path id="my_path1" d="M 43,27 C 80,60 15,40 120,20" fill="transparent" />
+                    <path id="my_path2" d="M 5,190 C 200,200 300,100 120,20" fill="transparent" />
+                    <a href="quizz.html" >
+                        <text x="43" y="27" style="font-size: 25px;">
+                            <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="30" to="0" begin="1s" dur="10s" fill="freeze" />
+                            <textPath xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#my_path1">
+                                Quizz
+                            </textPath>
+                        </text>
+                    </a>
+                    <a href="comentarios.html" >
+                        <text x="35" y="190" style="font-size: 22px";>
+                            <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="30" to="0" begin="1s" dur="10s" fill="freeze" />
+                            <textPath xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#my_path2">
+                                Comentários
+                            </textPath>
+                        </text>
+                    </a>
+                    <a href="../index.html" >
+                        <text x="112" y="75" style="font-size: 35px";>
+                            Home
+                            <animateTransform attributeName="transform" attributeType="XML" type="scale" begin="1s" values="1;1.2;1;1.2;1" dur="10s" fill="freeze" />
+                        </text>
+                    </a>
+                    <a href="index.html" >
+                        <text x="200" y="40" style="font-size: 19px";>
+                            Introdução
+                            <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-30" to="0" begin="1s" dur="10s" fill="freeze" />
+                        </text>
+                    </a>
+                    <a href="local.html">
+                        <text x="153" y="140" style="font-size: 23px";>
+                            Localização
+                            <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-30" to="0" begin="1s" dur="10s" fill="freeze" />
+                        </text>
+                    </a>
+                    <a href="multimedia.html">
+                        <text x="13" y="120" style="font-size: 25px";>
+                            Multimédia
+                            <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="30" to="0" begin="1s" dur="10s" fill="freeze" />
+                        </text>
+                    </a>
+                    <a href="info.html">
+                        <text x="176" y="206" style="font-size: 21px";>
+                            Informações
+                            <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-30" to="0" begin="1s" dur="10s" fill="freeze" />
+                        </text>
+                    </a>
+                </svg>
+            </section>
+            <hr>
+        </main>
+        <footer>
+            <p>Pedro Costa - a21904825 - Universidade Lusófona - 2º Ano</p>
+        </footer>
+    </body>
+</html>
