@@ -39,6 +39,11 @@ footer {grid-area: footer;}
 
 footer {margin-bottom: -50px;}
 
+aside {
+    display: flex;
+    flex-direction: column;
+}
+
 nav > div {
     display: flex;
 }
