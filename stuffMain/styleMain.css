@@ -19,7 +19,7 @@ nav {grid-area: menu;}
 main {grid-area: main;}
 footer {grid-area: footer;}
 
-/* */
+/*PC, PHONE, TABLET*/
 body {
     background-image: url('../lab1/img/back.jpg');	
     display: grid;
@@ -39,12 +39,8 @@ nav {
     justify-content: space-around;
 }
 
-/*PHONE E TABLET*/
-@media (max-width: 600px) {
-    
-}
-
 footer {margin-bottom: -50px;}
+
 nav > a {
     display: block;
     color: #000;
