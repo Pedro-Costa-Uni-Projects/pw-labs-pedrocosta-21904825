@@ -18,17 +18,29 @@ footer {grid-area: footer;}
         grid-template-columns: 25% 50% 25%;
         grid-template-areas:
         'header header header'
-        'menu   main   aside'
+        'menu   menu   menu'
+        'main   main   aside'
         'footer footer footer';
         grid-gap: 10px;
         padding: 20px;
     }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
 }
 
-nav {
+/*PHONE E TABLET*/
+@media (max-width: 600px) {
+    
+}
+
+footer {margin-bottom: -50px;}
+
+nav > div {
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
 }
 
 nav > div > a {
@@ -107,7 +119,7 @@ h4 + p::first-letter {
 
 .relative {
     position: relative;
-    right: 7%;
+    right: 12%;
 }
 
 .absolute {
