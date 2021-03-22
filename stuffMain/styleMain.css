@@ -39,7 +39,10 @@ nav {
     justify-content: space-around;
 }
 
-footer {margin-bottom: -50px;}
+footer {
+    margin-bottom: -50px;
+    border-top: solid darkgray 2px;
+}
 
 nav > a {
     display: block;

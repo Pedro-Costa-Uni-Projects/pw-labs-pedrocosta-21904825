@@ -37,7 +37,10 @@ footer {grid-area: footer;}
     
 }
 
-footer {margin-bottom: -50px;}
+footer {
+    margin-bottom: -50px;
+    border-top: solid darkgray 2px;
+}
 
 aside {
     display: flex;
